@@ -1,0 +1,13 @@
+package com.rules;
+dialect  "mvel"
+
+rule "repeat-rule"
+    when
+    then
+        System.out.println(1);
+end
+rule "repeat-other"
+    when
+    then
+        System.out.println(2);
+end

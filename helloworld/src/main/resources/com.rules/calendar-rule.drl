@@ -1,0 +1,11 @@
+package com.rules;
+dialect  "mvel"
+
+rule "calendar-rule"
+    calendars "weekday"
+    when
+        str:String()
+    then
+        System.out.println("In rule - " + drools.getRule().getName());
+        System.out.println("String matched " + str);
+end

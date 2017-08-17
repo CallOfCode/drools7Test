@@ -1,0 +1,19 @@
+package com.rules.test2;
+dialect  "mvel"
+
+rule "test-activation-group1"
+    activation-group "foo"
+    when
+        $obj : Object()
+    then
+        System.out.println("test-activation-group1 被触发");
+    end
+
+rule "test-activation-group2"
+    activation-group "foo"
+    salience 1
+    when
+    $obj : Object()
+    then
+        System.out.println("test-activation-group2 被触发" );
+    end
